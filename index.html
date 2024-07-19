@@ -11,26 +11,7 @@
 </head>
 
 <body class="bg-dark">
-	<audio id="myAudio">
-        <source src="asetnanda/Aku Milikmu Dewa 19 (320K).mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    <script>
-        window.addEventListener('load', function() {
-            var audio = document.getElementById('myAudio');
-            audio.play().catch(function(error) {
-                console.log('Playback failed:', error);
-                // Show a play button if auto-play fails
-                var playButton = document.createElement('button');
-                playButton.textContent = 'Play Audio';
-                playButton.onclick = function() {
-                    audio.play();
-                    playButton.style.display = 'none'; // Hide the button after playing
-                };
-                document.body.appendChild(playButton);
-            });
-        });
-    </script>
+	
 
   <div class="container-fluid text-light" style="height: 100vh">
     <!-- nav section start -->
@@ -69,7 +50,26 @@
       </div>
     </nav>
     <!-- nav section end -->
-
+<audio id="myAudio">
+        <source src="asetnanda/Aku Milikmu Dewa 19 (320K).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('myAudio');
+            audio.play().catch(function(error) {
+                console.log('Playback failed:', error);
+                // Show a play button if auto-play fails
+                var playButton = document.createElement('button');
+                playButton.textContent = 'Play Audio';
+                playButton.onclick = function() {
+                    audio.play();
+                    playButton.style.display = 'none'; // Hide the button after playing
+                };
+                document.body.appendChild(playButton);
+            });
+        });
+    </script>
     <!-- carousel images -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
