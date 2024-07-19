@@ -52,7 +52,7 @@
 <div class="card m-3" style="max-width: 540px; cursor: pointer;">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="/asetnanda/pic1.jpeg" class="img-fluid" alt="..." width="561" height="972">
+      <img src="/asetnanda/pic1.jpeg" class="img-fluid my-image" alt="...">
     </div>
     <div class="col-md-8">
       <div class="card-body">
@@ -61,6 +61,19 @@
     </div>
   </div>
 </div>
+
+<style>
+  .my-image {
+    width: 561px;
+    height: 972px;
+    object-fit: cover; /* Ensure the image covers the designated space */
+  }
+  .col-md-4 {
+    max-width: 100%; /* Ensure the column adapts to the image size */
+    flex: 0 0 auto; /* Prevent the column from shrinking */
+  }
+</style>
+
 
 
   <!-- first layout end -->
